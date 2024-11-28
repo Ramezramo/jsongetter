@@ -1,0 +1,185 @@
+{
+    "link": "https://mstore.io/wp-json/wc/v2/products/tags?per_page=100&page=1&hide_empty=true&lang=ar&consumer_key=ck_c16d601d14a44c8080418c1ab9336b72ae8faff2&consumer_secret=cs_1c11c4d0ee3bef861421bf3622f20f6b49c8497a",
+    "data": [
+        {
+            "id": 8,
+            "name": "black",
+            "slug": "black",
+            "description": "",
+            "count": 3,
+            "is_visible": true,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags/8"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 273,
+            "name": "feature",
+            "slug": "feature",
+            "description": "",
+            "count": 6,
+            "is_visible": true,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags/273"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 9,
+            "name": "gray",
+            "slug": "gray",
+            "description": "",
+            "count": 3,
+            "is_visible": true,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags/9"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 375,
+            "name": "jean",
+            "slug": "jean",
+            "description": "",
+            "count": 1,
+            "is_visible": true,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags/375"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 320,
+            "name": "red",
+            "slug": "red",
+            "description": "",
+            "count": 3,
+            "is_visible": true,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags/320"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 13,
+            "name": "ripped",
+            "slug": "ripped",
+            "description": "",
+            "count": 5,
+            "is_visible": true,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags/13"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 16,
+            "name": "white",
+            "slug": "white",
+            "description": "",
+            "count": 2,
+            "is_visible": true,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags/16"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 376,
+            "name": "women",
+            "slug": "women",
+            "description": "",
+            "count": 1,
+            "is_visible": true,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags/376"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 307,
+            "name": "خاصية",
+            "slug": "feature-ar",
+            "description": "",
+            "count": 3,
+            "is_visible": true,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags/307"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags"
+                    }
+                ]
+            }
+        }
+    ]
+}

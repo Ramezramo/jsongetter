@@ -1,0 +1,205 @@
+{
+    "link": "https://mstore.io/wp-json/wc/v2/products/tags?lang=ar&consumer_key=ck_c16d601d14a44c8080418c1ab9336b72ae8faff2&consumer_secret=cs_1c11c4d0ee3bef861421bf3622f20f6b49c8497a",
+    "data": [
+        {
+            "id": 332,
+            "name": "amaa",
+            "slug": "amaa",
+            "description": "",
+            "count": 0,
+            "is_visible": false,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags/332"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 333,
+            "name": "asdfgh",
+            "slug": "asdfgh",
+            "description": "",
+            "count": 0,
+            "is_visible": false,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags/333"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 334,
+            "name": "asdfghjk",
+            "slug": "asdfghjk",
+            "description": "",
+            "count": 0,
+            "is_visible": false,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags/334"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 329,
+            "name": "awdasd",
+            "slug": "awdasd",
+            "description": "",
+            "count": 0,
+            "is_visible": false,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags/329"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 8,
+            "name": "black",
+            "slug": "black",
+            "description": "",
+            "count": 3,
+            "is_visible": true,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags/8"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 328,
+            "name": "dads",
+            "slug": "dads",
+            "description": "",
+            "count": 0,
+            "is_visible": false,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags/328"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 335,
+            "name": "dghhgh",
+            "slug": "dghhgh",
+            "description": "",
+            "count": 0,
+            "is_visible": false,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags/335"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 330,
+            "name": "dsadasdas",
+            "slug": "dsadasdas",
+            "description": "",
+            "count": 0,
+            "is_visible": false,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags/330"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 273,
+            "name": "feature",
+            "slug": "feature",
+            "description": "",
+            "count": 6,
+            "is_visible": true,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags/273"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 9,
+            "name": "gray",
+            "slug": "gray",
+            "description": "",
+            "count": 3,
+            "is_visible": true,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags/9"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/tags"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -37,7 +37,7 @@ def map_type_to_laravel(python_type):
 
 def write_laravel_migration(table_name, columns):
     """Generate the Laravel migration file."""
-    migration_filename = f"{table_name}_table.php"
+    migration_filename = f"create_{table_name}_table.php"
     with open(migration_filename, 'w', encoding='utf-8') as file:
         file.write("<?php\n\n")
         file.write("use Illuminate\\Database\\Migrations\\Migration;\n")
@@ -65,7 +65,7 @@ def write_laravel_migration(table_name, columns):
 def write_laravel_model(table_name, fillable_attributes):
     """Generate the Laravel model file."""
     model_name = table_name.capitalize()
-    model_filename = f"{model_name}Model.php"
+    model_filename = f"{model_name}.php"
     fillable_string = ",\n        ".join(fillable_attributes)
     
     with open(model_filename, 'w', encoding='utf-8') as file:
@@ -148,7 +148,7 @@ class {controller_name} extends Controller
 
 
 # Load JSON data
-filename = "file_9.json"  # Replace with your actual filename
+filename = "file_2.json"  # Replace with your actual filename
 with open(filename, 'r', encoding='utf-8') as json_file:
     data = json.load(json_file)
 

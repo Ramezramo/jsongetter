@@ -11,16 +11,30 @@ def extract_top_level_keys_with_types(json_data):
     if isinstance(json_data, dict) and "data" in json_data:
         for item in json_data["data"]:
             if isinstance(item, dict):
-                for key, value in item.items():
-                    if key not in seen_keys:  # Only process if the key hasn't been seen
-                        laravel_type = map_type_to_laravel(type(value).__name__)
-                        columns.append(f"            $table->{laravel_type}('{key}');")
-                        fillable_attributes.append(f"'{key}'")
-                        seen_keys.add(key)  # Mark this key as seen
+                # Recursively process the keys from the current item
+                process_item_keys(item, seen_keys, columns, fillable_attributes)
     elif isinstance(json_data, list) and json_data:
         return extract_top_level_keys_with_types(json_data[0])  # process the first object in the list
 
     return columns, fillable_attributes
+
+def process_item_keys(item, seen_keys, columns, fillable_attributes):
+    """Process the keys of an item, including nested objects."""
+    for key, value in item.items():
+        if key not in seen_keys:  # Only process if the key hasn't been seen
+            laravel_type = map_type_to_laravel(type(value).__name__)
+            columns.append(f"            $table->{laravel_type}('{key}');")
+            fillable_attributes.append(f"'{key}'")
+            seen_keys.add(key)  # Mark this key as seen
+
+            # Recursively process nested objects or lists
+            if isinstance(value, dict):
+                process_item_keys(value, seen_keys, columns, fillable_attributes)
+            elif isinstance(value, list) and value and isinstance(value[0], dict):
+                for sub_item in value:
+                    process_item_keys(sub_item, seen_keys, columns, fillable_attributes)
+
+
 
 def map_type_to_laravel(python_type):
     """Map Python types to Laravel migration types."""
@@ -37,7 +51,7 @@ def map_type_to_laravel(python_type):
 
 def write_laravel_migration(table_name, columns):
     """Generate the Laravel migration file."""
-    migration_filename = f"{table_name}_table.php"
+    migration_filename = f"create_{table_name}_table.php"
     with open(migration_filename, 'w', encoding='utf-8') as file:
         file.write("<?php\n\n")
         file.write("use Illuminate\\Database\\Migrations\\Migration;\n")
@@ -65,7 +79,7 @@ def write_laravel_migration(table_name, columns):
 def write_laravel_model(table_name, fillable_attributes):
     """Generate the Laravel model file."""
     model_name = table_name.capitalize()
-    model_filename = f"{model_name}Model.php"
+    model_filename = f"{model_name}.php"
     fillable_string = ",\n        ".join(fillable_attributes)
     
     with open(model_filename, 'w', encoding='utf-8') as file:
@@ -148,7 +162,7 @@ class {controller_name} extends Controller
 
 
 # Load JSON data
-filename = "file_9.json"  # Replace with your actual filename
+filename = "file_2.json"  # Replace with your actual filename
 with open(filename, 'r', encoding='utf-8') as json_file:
     data = json.load(json_file)
 

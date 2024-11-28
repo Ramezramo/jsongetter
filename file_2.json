@@ -1,0 +1,550 @@
+{
+    "link": "https://mstore.io/wp-json/wc/v2/products/categories?exclude=311&per_page=100&page=1&hide_empty=true&lang=ar&consumer_key=ck_c16d601d14a44c8080418c1ab9336b72ae8faff2&consumer_secret=cs_1c11c4d0ee3bef861421bf3622f20f6b49c8497a",
+    "data": [
+        {
+            "id": 24,
+            "name": "Bag",
+            "slug": "bags-men",
+            "parent": 18,
+            "description": "abc def",
+            "display": "default",
+            "image": {
+                "id": 30685,
+                "date_created": "2022-03-05T15:58:43",
+                "date_created_gmt": "2022-03-05T08:58:43",
+                "date_modified": "2022-03-05T15:58:43",
+                "date_modified_gmt": "2022-03-05T08:58:43",
+                "src": "https://mstore.io/wp-content/uploads/2022/03/backpack.jpeg",
+                "title": "backpack",
+                "alt": ""
+            },
+            "menu_order": 7,
+            "count": 7,
+            "has_children": false,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/24"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories"
+                    }
+                ],
+                "up": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/18"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 23,
+            "name": "Bags",
+            "slug": "bags",
+            "parent": 0,
+            "description": "",
+            "display": "default",
+            "image": {
+                "id": 10861,
+                "date_created": "2017-06-15T13:34:54",
+                "date_created_gmt": "2017-06-15T06:34:54",
+                "date_modified": "2017-06-15T13:34:54",
+                "date_modified_gmt": "2017-06-15T06:34:54",
+                "src": "https://mstore.io/wp-content/uploads/2017/06/poster.png",
+                "title": "poster",
+                "alt": ""
+            },
+            "menu_order": 4,
+            "count": 10,
+            "has_children": false,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/23"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 25,
+            "name": "Blazers",
+            "slug": "blazers",
+            "parent": 22,
+            "description": "",
+            "display": "default",
+            "image": {
+                "id": 30667,
+                "date_created": "2022-03-05T14:16:49",
+                "date_created_gmt": "2022-03-05T07:16:49",
+                "date_modified": "2022-03-05T14:16:49",
+                "date_modified_gmt": "2022-03-05T07:16:49",
+                "src": "https://mstore.io/wp-content/uploads/2022/03/01_woman.jpg",
+                "title": "01_woman",
+                "alt": ""
+            },
+            "menu_order": 14,
+            "count": 4,
+            "has_children": false,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/25"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories"
+                    }
+                ],
+                "up": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/22"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 208,
+            "name": "Clothing",
+            "slug": "clothing",
+            "parent": 0,
+            "description": "",
+            "display": "default",
+            "image": {
+                "id": 10855,
+                "date_created": "2017-06-15T10:43:50",
+                "date_created_gmt": "2017-06-15T03:43:50",
+                "date_modified": "2017-06-15T10:43:50",
+                "date_modified_gmt": "2017-06-15T03:43:50",
+                "src": "https://mstore.io/wp-content/uploads/2017/06/cloth.png",
+                "title": "cloth",
+                "alt": ""
+            },
+            "menu_order": 3,
+            "count": 3,
+            "has_children": false,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/208"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 26,
+            "name": "Dresses",
+            "slug": "dresses",
+            "parent": 22,
+            "description": "",
+            "display": "default",
+            "image": {
+                "id": 30658,
+                "date_created": "2022-03-05T14:16:04",
+                "date_created_gmt": "2022-03-05T07:16:04",
+                "date_modified": "2022-03-05T14:16:04",
+                "date_modified_gmt": "2022-03-05T07:16:04",
+                "src": "https://mstore.io/wp-content/uploads/2022/03/11_woman.jpg",
+                "title": "11_woman",
+                "alt": ""
+            },
+            "menu_order": 15,
+            "count": 11,
+            "has_children": false,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/26"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories"
+                    }
+                ],
+                "up": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/22"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 28,
+            "name": "Jackets",
+            "slug": "jackets-men",
+            "parent": 30,
+            "description": "",
+            "display": "default",
+            "image": {
+                "id": 30649,
+                "date_created": "2022-03-05T14:15:31",
+                "date_created_gmt": "2022-03-05T07:15:31",
+                "date_modified": "2022-03-05T14:15:31",
+                "date_modified_gmt": "2022-03-05T07:15:31",
+                "src": "https://mstore.io/wp-content/uploads/2022/03/04_man.jpg",
+                "title": "04_man",
+                "alt": ""
+            },
+            "menu_order": 9,
+            "count": 13,
+            "has_children": true,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/28"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories"
+                    }
+                ],
+                "up": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/30"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 27,
+            "name": "Jackets",
+            "slug": "jackets",
+            "parent": 22,
+            "description": "",
+            "display": "default",
+            "image": {
+                "id": 30661,
+                "date_created": "2022-03-05T14:16:24",
+                "date_created_gmt": "2022-03-05T07:16:24",
+                "date_modified": "2022-03-05T14:16:24",
+                "date_modified_gmt": "2022-03-05T07:16:24",
+                "src": "https://mstore.io/wp-content/uploads/2022/03/06_woman.jpg",
+                "title": "06_woman",
+                "alt": ""
+            },
+            "menu_order": 16,
+            "count": 11,
+            "has_children": false,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/27"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories"
+                    }
+                ],
+                "up": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/22"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 29,
+            "name": "Jeans",
+            "slug": "jeans",
+            "parent": 22,
+            "description": "",
+            "display": "default",
+            "image": {
+                "id": 30666,
+                "date_created": "2022-03-05T14:16:41",
+                "date_created_gmt": "2022-03-05T07:16:41",
+                "date_modified": "2022-03-05T14:16:41",
+                "date_modified_gmt": "2022-03-05T07:16:41",
+                "src": "https://mstore.io/wp-content/uploads/2022/03/03_woman.jpg",
+                "title": "03_woman",
+                "alt": ""
+            },
+            "menu_order": 17,
+            "count": 12,
+            "has_children": false,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/29"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories"
+                    }
+                ],
+                "up": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/22"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 30,
+            "name": "Jeans Man",
+            "slug": "jeans-men",
+            "parent": 18,
+            "description": "",
+            "display": "default",
+            "image": {
+                "id": 30653,
+                "date_created": "2022-03-05T14:15:47",
+                "date_created_gmt": "2022-03-05T07:15:47",
+                "date_modified": "2022-03-05T14:15:47",
+                "date_modified_gmt": "2022-03-05T07:15:47",
+                "src": "https://mstore.io/wp-content/uploads/2022/03/02_man.jpg",
+                "title": "02_man",
+                "alt": ""
+            },
+            "menu_order": 8,
+            "count": 25,
+            "has_children": true,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/30"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories"
+                    }
+                ],
+                "up": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/18"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 18,
+            "name": "Men",
+            "slug": "men",
+            "parent": 0,
+            "description": "",
+            "display": "default",
+            "image": {
+                "id": 10852,
+                "date_created": "2017-06-15T10:26:13",
+                "date_created_gmt": "2017-06-15T03:26:13",
+                "date_modified": "2017-06-15T10:26:13",
+                "date_modified_gmt": "2017-06-15T03:26:13",
+                "src": "https://mstore.io/wp-content/uploads/2017/06/man.png",
+                "title": "man",
+                "alt": ""
+            },
+            "menu_order": 6,
+            "count": 51,
+            "has_children": true,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/18"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 19,
+            "name": "Shirts",
+            "slug": "shirts",
+            "parent": 18,
+            "description": "",
+            "display": "default",
+            "image": {
+                "id": 30641,
+                "date_created": "2022-03-05T14:14:54",
+                "date_created_gmt": "2022-03-05T07:14:54",
+                "date_modified": "2022-03-05T14:14:54",
+                "date_modified_gmt": "2022-03-05T07:14:54",
+                "src": "https://mstore.io/wp-content/uploads/2022/03/08_man.jpg",
+                "title": "08_man",
+                "alt": ""
+            },
+            "menu_order": 11,
+            "count": 12,
+            "has_children": false,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/19"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories"
+                    }
+                ],
+                "up": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/18"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 20,
+            "name": "Shoes",
+            "slug": "shoes-men",
+            "parent": 28,
+            "description": "",
+            "display": "default",
+            "image": {
+                "id": 30679,
+                "date_created": "2022-03-05T14:23:01",
+                "date_created_gmt": "2022-03-05T07:23:01",
+                "date_modified": "2022-03-05T14:23:01",
+                "date_modified_gmt": "2022-03-05T07:23:01",
+                "src": "https://mstore.io/wp-content/uploads/2022/03/muzhskaya.webp",
+                "title": "muzhskaya",
+                "alt": ""
+            },
+            "menu_order": 10,
+            "count": 1,
+            "has_children": false,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/20"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories"
+                    }
+                ],
+                "up": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/28"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 21,
+            "name": "T-Shirts",
+            "slug": "t-shirts",
+            "parent": 18,
+            "description": "",
+            "display": "default",
+            "image": {
+                "id": 30635,
+                "date_created": "2022-03-05T14:14:28",
+                "date_created_gmt": "2022-03-05T07:14:28",
+                "date_modified": "2022-03-05T14:14:28",
+                "date_modified_gmt": "2022-03-05T07:14:28",
+                "src": "https://mstore.io/wp-content/uploads/2022/03/12_man.jpg",
+                "title": "12_man",
+                "alt": ""
+            },
+            "menu_order": 12,
+            "count": 8,
+            "has_children": false,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/21"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories"
+                    }
+                ],
+                "up": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/18"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 314,
+            "name": "Uncategorized",
+            "slug": "uncategorized-ar",
+            "parent": 0,
+            "description": "",
+            "display": "default",
+            "image": {
+                "id": 30638,
+                "date_created": "2022-03-05T14:14:37",
+                "date_created_gmt": "2022-03-05T07:14:37",
+                "date_modified": "2022-03-05T14:14:37",
+                "date_modified_gmt": "2022-03-05T07:14:37",
+                "src": "https://mstore.io/wp-content/uploads/2022/03/11_man.jpg",
+                "title": "11_man",
+                "alt": ""
+            },
+            "menu_order": 0,
+            "count": 37,
+            "has_children": false,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/314"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 22,
+            "name": "Women",
+            "slug": "women",
+            "parent": 0,
+            "description": "",
+            "display": "default",
+            "image": {
+                "id": 12016,
+                "date_created": "2017-11-24T11:28:30",
+                "date_created_gmt": "2017-11-24T04:28:30",
+                "date_modified": "2017-11-24T11:28:30",
+                "date_modified_gmt": "2017-11-24T04:28:30",
+                "src": "https://mstore.io/wp-content/uploads/2017/11/woman.png",
+                "title": "woman",
+                "alt": ""
+            },
+            "menu_order": 13,
+            "count": 47,
+            "has_children": true,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories/22"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/categories"
+                    }
+                ]
+            }
+        }
+    ]
+}

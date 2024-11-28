@@ -2,21 +2,18 @@ import json
 import os
 
 def extract_top_level_keys_with_types(json_data):
-    """Extract top-level keys and generate Laravel migration columns without repeating keys."""
+    """Extract top-level keys and generate Laravel migration columns."""
     columns = []
     fillable_attributes = []
-    seen_keys = set()  # To keep track of keys we've already processed
     
     # Check if the JSON data has a 'data' key which holds the records
     if isinstance(json_data, dict) and "data" in json_data:
         for item in json_data["data"]:
             if isinstance(item, dict):
                 for key, value in item.items():
-                    if key not in seen_keys:  # Only process if the key hasn't been seen
-                        laravel_type = map_type_to_laravel(type(value).__name__)
-                        columns.append(f"            $table->{laravel_type}('{key}');")
-                        fillable_attributes.append(f"'{key}'")
-                        seen_keys.add(key)  # Mark this key as seen
+                    laravel_type = map_type_to_laravel(type(value).__name__)
+                    columns.append(f"            $table->{laravel_type}('{key}');")
+                    fillable_attributes.append(f"'{key}'")
     elif isinstance(json_data, list) and json_data:
         return extract_top_level_keys_with_types(json_data[0])  # process the first object in the list
 
@@ -37,7 +34,7 @@ def map_type_to_laravel(python_type):
 
 def write_laravel_migration(table_name, columns):
     """Generate the Laravel migration file."""
-    migration_filename = f"{table_name}_table.php"
+    migration_filename = f"create_{table_name}_table.php"
     with open(migration_filename, 'w', encoding='utf-8') as file:
         file.write("<?php\n\n")
         file.write("use Illuminate\\Database\\Migrations\\Migration;\n")
@@ -65,7 +62,7 @@ def write_laravel_migration(table_name, columns):
 def write_laravel_model(table_name, fillable_attributes):
     """Generate the Laravel model file."""
     model_name = table_name.capitalize()
-    model_filename = f"{model_name}Model.php"
+    model_filename = f"{model_name}.php"
     fillable_string = ",\n        ".join(fillable_attributes)
     
     with open(model_filename, 'w', encoding='utf-8') as file:
@@ -148,7 +145,7 @@ class {controller_name} extends Controller
 
 
 # Load JSON data
-filename = "file_9.json"  # Replace with your actual filename
+filename = "file_2.json"  # Replace with your actual filename
 with open(filename, 'r', encoding='utf-8') as json_file:
     data = json.load(json_file)
 

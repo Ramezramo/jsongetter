@@ -1,0 +1,110 @@
+{
+    "link": "https://mstore.io/wp-json/wc/v2/products/attributes?lang=ar&consumer_key=ck_c16d601d14a44c8080418c1ab9336b72ae8faff2&consumer_secret=cs_1c11c4d0ee3bef861421bf3622f20f6b49c8497a",
+    "data": [
+        {
+            "id": 2,
+            "name": "color",
+            "slug": "pa_color",
+            "type": "select",
+            "order_by": "menu_order",
+            "has_archives": false,
+            "is_visible": true,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/2"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 7,
+            "name": "Images",
+            "slug": "pa_color-image",
+            "type": "select",
+            "order_by": "menu_order",
+            "has_archives": false,
+            "is_visible": false,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/7"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 5,
+            "name": "height",
+            "slug": "pa_height",
+            "type": "select",
+            "order_by": "menu_order",
+            "has_archives": false,
+            "is_visible": true,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/5"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1,
+            "name": "size",
+            "slug": "pa_size",
+            "type": "select",
+            "order_by": "menu_order",
+            "has_archives": false,
+            "is_visible": true,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/1"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "name": "Width",
+            "slug": "pa_width",
+            "type": "select",
+            "order_by": "menu_order",
+            "has_archives": false,
+            "is_visible": true,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/3"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes"
+                    }
+                ]
+            }
+        }
+    ]
+}

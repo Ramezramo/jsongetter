@@ -1,0 +1,205 @@
+{
+    "link": "https://mstore.io/wp-json/wc/v2/products/attributes/2/terms?page=1&per_page=100&lang=ar&consumer_key=ck_c16d601d14a44c8080418c1ab9336b72ae8faff2&consumer_secret=cs_1c11c4d0ee3bef861421bf3622f20f6b49c8497a",
+    "data": [
+        {
+            "id": 269,
+            "name": "Black",
+            "slug": "black",
+            "description": "",
+            "menu_order": 0,
+            "count": 11,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/2/terms/269"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/2/terms"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 382,
+            "name": "Black &amp; White",
+            "slug": "black-white",
+            "description": "",
+            "menu_order": 0,
+            "count": 0,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/2/terms/382"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/2/terms"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 270,
+            "name": "Blue",
+            "slug": "blue",
+            "description": "",
+            "menu_order": 0,
+            "count": 10,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/2/terms/270"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/2/terms"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 271,
+            "name": "Green",
+            "slug": "green",
+            "description": "",
+            "menu_order": 0,
+            "count": 11,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/2/terms/271"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/2/terms"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 379,
+            "name": "pink",
+            "slug": "pink",
+            "description": "",
+            "menu_order": 0,
+            "count": 1,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/2/terms/379"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/2/terms"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 373,
+            "name": "Pinkk",
+            "slug": "pinkk",
+            "description": "",
+            "menu_order": 0,
+            "count": 0,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/2/terms/373"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/2/terms"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 272,
+            "name": "Red",
+            "slug": "red",
+            "description": "",
+            "menu_order": 0,
+            "count": 11,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/2/terms/272"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/2/terms"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 378,
+            "name": "white",
+            "slug": "white",
+            "description": "",
+            "menu_order": 0,
+            "count": 2,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/2/terms/378"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/2/terms"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 274,
+            "name": "Yellow",
+            "slug": "yellow",
+            "description": "",
+            "menu_order": 0,
+            "count": 6,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/2/terms/274"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/2/terms"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 377,
+            "name": "za",
+            "slug": "za",
+            "description": "",
+            "menu_order": 0,
+            "count": 0,
+            "_links": {
+                "self": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/2/terms/377"
+                    }
+                ],
+                "collection": [
+                    {
+                        "href": "https://mstore.io/wp-json/wc/v2/products/attributes/2/terms"
+                    }
+                ]
+            }
+        }
+    ]
+}

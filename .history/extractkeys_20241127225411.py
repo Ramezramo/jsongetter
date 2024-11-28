@@ -65,7 +65,7 @@ def write_laravel_migration(table_name, columns):
 def write_laravel_model(table_name, fillable_attributes):
     """Generate the Laravel model file."""
     model_name = table_name.capitalize()
-    model_filename = f"{model_name}Model.php"
+    model_filename = f"{model_name}.php"
     fillable_string = ",\n        ".join(fillable_attributes)
     
     with open(model_filename, 'w', encoding='utf-8') as file:
