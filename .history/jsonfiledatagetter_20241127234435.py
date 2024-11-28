@@ -63,6 +63,7 @@ def process_url(url):
             if makelaravelconfigration:
                 LaravelGenerator(unique_filename)
                 print(f"Data successfully saved to {unique_filename} and created LaravelCnfigration")
+
             else:
                 print(f"Data successfully saved to {unique_filename}")
 

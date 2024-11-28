@@ -148,8 +148,8 @@ class {controller_name} extends Controller
 # Loop through files from 'file_2.json' to 'file_21.json'
 startfromfile = 2 
 endatfile = 21
-for i in range(startfromfile, endatfile + 1):
-    filename = f"file_{i}.json"
+for i in range(startfromfile, endatfile + 1):  
+    filename = f"file_{i}.json"  
     
     if os.path.exists(filename):  
         with open(filename, 'r', encoding='utf-8') as json_file:

@@ -5,8 +5,6 @@ import os
 import pyperclip
 import time
 
-from extractkeysforclassuse import LaravelGenerator
-
 links_file = 'used_links.json'
 db_file = 'db.json'
 mylinks_file = 'mylinks.json'
@@ -60,11 +58,9 @@ def process_url(url):
 
         with open(unique_filename, 'w', encoding='utf-8') as json_file:
             json.dump(data_with_link, json_file, ensure_ascii=False, indent=4)
-            if makelaravelconfigration:
-                LaravelGenerator(unique_filename)
-                print(f"Data successfully saved to {unique_filename} and created LaravelCnfigration")
-            else:
-                print(f"Data successfully saved to {unique_filename}")
+            if 
+
+        print(f"Data successfully saved to {unique_filename}")
 
         used_links.append(url)
         store_links(used_links)
