@@ -7,33 +7,32 @@ import time
 
 links_file = 'used_links.json'
 db_file = 'db.json'
-mylinks_file = 'mylinks.json'  # File containing stored links
-
-# Load links from the file
+mylinks_file = 'mylinks.json'  
+# this python script for getting api data and store it in a json file
 def load_links():
     if os.path.exists(links_file):
         with open(links_file, 'r', encoding='utf-8') as file:
             return json.load(file)
     return []
 
-# Store the updated links in the file
+
 def store_links(links):
     with open(links_file, 'w', encoding='utf-8') as file:
         json.dump(links, file, ensure_ascii=False, indent=4)
 
-# Load or initialize the database for file numbering
+
 def load_db():
     if os.path.exists(db_file):
         with open(db_file, 'r', encoding='utf-8') as file:
             return json.load(file)
     return {"last_file_number": 0}
 
-# Update the database with the latest file number
+
 def update_db(db):
     with open(db_file, 'w', encoding='utf-8') as file:
         json.dump(db, file, ensure_ascii=False, indent=4)
 
-# Generate an incremented filename based on the last stored number
+
 def generate_unique_filename(db):
     db['last_file_number'] += 1
     update_db(db)
@@ -41,7 +40,7 @@ def generate_unique_filename(db):
 
 used_links = load_links()
 db = load_db()
-last_clipboard_content = ""  # For clipboard change detection
+last_clipboard_content = ""  
 
 def process_url(url):
     if url in used_links:

@@ -1,24 +1,27 @@
 import json
 import os
 
+# to get ready to make your own api like the api you found online 
+# this file uses to convert the saved json files from the filedatagetter.py and then it will 
+# set the model and controller and the migration  file
+
 def extract_top_level_keys_with_types(json_data):
     """Extract top-level keys and generate Laravel migration columns without repeating keys."""
     columns = []
     fillable_attributes = []
-    seen_keys = set()  # To keep track of keys we've already processed
+    seen_keys = set()  
     
-    # Check if the JSON data has a 'data' key which holds the records
     if isinstance(json_data, dict) and "data" in json_data:
         for item in json_data["data"]:
             if isinstance(item, dict):
                 for key, value in item.items():
-                    if key not in seen_keys:  # Only process if the key hasn't been seen
+                    if key not in seen_keys:  
                         laravel_type = map_type_to_laravel(type(value).__name__)
                         columns.append(f"            $table->{laravel_type}('{key}');")
                         fillable_attributes.append(f"'{key}'")
-                        seen_keys.add(key)  # Mark this key as seen
+                        seen_keys.add(key)  
     elif isinstance(json_data, list) and json_data:
-        return extract_top_level_keys_with_types(json_data[0])  # process the first object in the list
+        return extract_top_level_keys_with_types(json_data[0])  
 
     return columns, fillable_attributes
 
@@ -37,7 +40,7 @@ def map_type_to_laravel(python_type):
 
 def write_laravel_migration(table_name, columns):
     """Generate the Laravel migration file."""
-    migration_filename = f"{table_name}_table.php"
+    migration_filename = f"{table_name}_Migration.php"
     with open(migration_filename, 'w', encoding='utf-8') as file:
         file.write("<?php\n\n")
         file.write("use Illuminate\\Database\\Migrations\\Migration;\n")
@@ -64,8 +67,8 @@ def write_laravel_migration(table_name, columns):
 
 def write_laravel_model(table_name, fillable_attributes):
     """Generate the Laravel model file."""
-    model_name = table_name.capitalize()
-    model_filename = f"{model_name}Model.php"
+    model_name = table_name
+    model_filename = f"{model_name}_Model.php"
     fillable_string = ",\n        ".join(fillable_attributes)
     
     with open(model_filename, 'w', encoding='utf-8') as file:
@@ -82,14 +85,12 @@ def write_laravel_model(table_name, fillable_attributes):
     print(f"Model file '{model_filename}' created successfully.")
 def write_laravel_controller(table_name, fillable_attributes):
     """Generate the Laravel controller file."""
-    controller_name = f"{table_name.capitalize()}Controller"
+    controller_name = f"{table_name}_Controller"
     controller_filename = f"{controller_name}.php"
     model_name = table_name.capitalize()
     
-    # Prepare the fillable attributes string in a readable format
-    fillable_str = ',\n            '.join([f"'{attr}'=>'required'" for attr in fillable_attributes])
+    fillable_str = ',\n            '.join([f"{attr}=>'required'" for attr in fillable_attributes])
 
-    # Generate controller methods for CRUD operations (index, store, show, update, destroy)
     controller_methods = [
         ("index", f"        return response()->json({model_name}::all());"),
         ("store", f"""        $validated = $request->validate([
@@ -104,7 +105,6 @@ def write_laravel_controller(table_name, fillable_attributes):
         return response()->json(null, 204);""")
     ]
 
-    # Begin controller file content
     controller_content = f"""<?php
 
 namespace App\Http\Controllers;
@@ -140,26 +140,31 @@ class {controller_name} extends Controller
     }}
 }}
 """
-    # Write the controller content to a PHP file
     with open(controller_filename, 'w', encoding='utf-8') as file:
         file.write(controller_content)
 
     print(f"Controller {controller_filename} has been generated.")
 
+# Loop through files from 'file_2.json' to 'file_21.json'
+startfromfile = 2 
+endatfile = 21
+for i in range(startfromfile, endatfile + 1):  
+    filename = f"file_{i}.json"  
+    
+    if os.path.exists(filename):  
+        with open(filename, 'r', encoding='utf-8') as json_file:
+            data = json.load(json_file)
 
-# Load JSON data
-filename = "file_9.json"  # Replace with your actual filename
-with open(filename, 'r', encoding='utf-8') as json_file:
-    data = json.load(json_file)
+        columns, fillable_attributes = extract_top_level_keys_with_types(data)
 
-# Extract top-level keys and generate columns for the migration and fillable attributes
-columns, fillable_attributes = extract_top_level_keys_with_types(data)
-
-# Define table name and write migration, model, and controller
-table_name = os.path.splitext(os.path.basename(filename))[0].replace("-", "_")
-write_laravel_migration(table_name, columns)
-write_laravel_model(table_name, fillable_attributes)
-write_laravel_controller(table_name, fillable_attributes)
+        table_name = os.path.splitext(os.path.basename(filename))[0].replace("-", "_")
+        
+        # Write migration, model, and controller for each file
+        write_laravel_migration(table_name, columns)
+        write_laravel_model(table_name, fillable_attributes)
+        write_laravel_controller(table_name, fillable_attributes)
+    else:
+        print(f"File {filename} does not exist.")
 
 
 
